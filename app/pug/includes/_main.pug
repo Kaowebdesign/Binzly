@@ -1,0 +1,66 @@
+-
+	var lite=[['Пакет Lite',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.'],
+			['Пакет Lite',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.'],
+			['Пакет Lite',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.'],
+			['Пакет Lite',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.'],
+			['Пакет Lite',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.'],
+			['Пакет Lite',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.',' Lorem ipsum dolor sit.']]
+main.main
+	.main__wrap
+		section.main__uslugi
+			h1.main__caption Наши услуги
+			p.main__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto officiis optio laudantium eius assumenda ducimus, sequi fugiat ullam cum natus modi reprehenderit, labore, aliquid qui atque est earum. Aperiam, consectetur.
+			article.main__paketu
+				.main__left
+					-for(i=0;i<lite.length;i++)
+						.main__lite
+							h2.main__liteCaption=lite[i][0]
+							.main__check
+								.main__wrapChek
+									.fa.fa-check-square-o
+								p.main__liteCapt=lite[i][1]
+							.main__check
+								.main__wrapChek
+									.fa.fa-check-square-o
+								p.main__liteCapt=lite[i][2]
+							.main__check
+								.main__wrapChek
+									.fa.fa-check-square-o
+								p.main__liteCapt=lite[i][3]
+							.main__liteLink
+								a(href="").main__liteHelp Подробнее о пакете Lite
+				.main__right
+					img(src="../img/hand.png", alt="HAND").main__banner
+	section.main__why
+		h1.main__caption Почему Binzly
+		.main__whyBlock
+			article.main__about
+				img(src="../img/why1.png", alt="Безопасность")
+				h1.main__whyCapt Безопасность
+				p.main__whyText Мы серьезно относимся к безопасности, поэтому постоянно обновляем инфраструктуру, работаем над распределением нагрузок и поддерживаем наши DNS по всему миру.
+			article.main__about
+				img(src="../img/why2.png", alt="Широкий спектр услуг")
+				h1.main__whyCapt Широкий спектр услуг
+				p.main__whyText Мы стараемся предоставлять все услуги, которые нужны вашим сайтам: домены, серверы имен, облачный хостинг, SSL, торговые марки и многое другое.
+			article.main__about
+				img(src="../img/why3.png", alt="Скидки и бонусы")
+				h1.main__whyCapt Скидки и бонусы
+				p.main__whyText За каждый заказ на NIC.UA вы получаете бонусы, которыми можно оплатить до 50% следующего счета. Также даем постоянную скидку 15% за трансфер домена к нам.
+			article.main__about
+				img(src="../img/why4.png", alt="Надежная команда поддержки")
+				h1.main__whyCapt Надежная команда поддержки
+				p.main__whyText Наши сотрудники поддержки всегда готовы ответить на ваши вопросы и помочь с заказом и настройками. <a href="#" class="main__callUs">Свяжитесь с нами</a> — мы ответим на все ваши вопросы.
+	div.main__wrap
+		section.main__friends
+			h1.main__caption Нам доверяют
+			.main__logoses
+				-for(i=0;i<10;i++)
+					.main__fLogo
+						img(src="../img/logo2.png", alt="Logo")
+	section.main__needHelp
+		.main__wrapNeed
+			.main__needLogo
+				.fa.fa-life-ring
+			p.main__needCapt <span class="main__helpes">Нужна помощь?</span> Наша поддержка клиентов будет рада вам помочь.
+		a(href="").main__toHelp Обратиться в поддержку
+			

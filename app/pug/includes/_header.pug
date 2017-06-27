@@ -1,0 +1,57 @@
+//-Массивы
+-
+	var menu=['Услуги','Отзывы','Новости','Еще']
+	var language=['Ua','Ru','En']
+	var linkers=['Подробнее о Binzly','Купить тарифный план']
+header.header
+	.header__wrap
+		.header__top
+			.header__logo
+				a(href="/").header__link
+					img(src="../img/logo.png ", alt="Binzly")
+			nav.header__nav
+				ul.header__menu
+					li.header__menuItem
+						a(href="#").header__menuLink Услуги
+					li.header__menuItem
+						a(href="#").header__menuLink Отзывы
+					li.header__menuItem
+						a(href="#").header__menuLink Новости
+					li.header__menuItem
+						a(href="#").header__menuLink Еще
+						ul.header__hideMenu
+							li
+								a(href="#").header__hMenuLink  О компании
+							li
+								a(href="#").header__hMenuLink Документы
+							li
+								a(href="#").header__hMenuLink Скидки и бонусы
+							li
+								a(href="#").header__hMenuLink Акции
+							li
+								a(href="#").header__hMenuLink Компании
+						.fa.fa-angle-down.header__arrow
+					li.fa.fa-shopping-cart.header__cart
+						.header__col
+							span.header__prodCol#col 0
+			.header__right
+				.header__lang
+					span.header__language Выберите язык:
+					each name in language
+						.header__itemLang
+							a(href="#").header__linkLang=name
+				.header__inputs
+					.fa.fa-phone.header__phone
+					a(href="").header__call Свяжитесь с нами
+					a(href="").header__in Войти
+		.header__center
+			h1.header__mCaption Продажа телефонного трафика входящих и исходящих линий
+			p.header__text   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore necessitatibus velit accusantium ullam mollitia consequatur nisi doloremque, adipisci sequi, hic fugit deserunt, saepe eaque aut cumque odio. Voluptas, facilis consequatur rem accusantium laudantium, esse deleniti, labore ad quisquam veniam velit, dolorem dolor odio ipsa alias aut nam in! Quam culpa odit modi, a soluta. Soluta cupiditate, natus voluptatum libero omnis laudantium neque officia explicabo minus et nobis.
+			ul.header__nextLinks
+				each name in linkers
+					li.header__nextItems
+						a(href="#").header__nextHelp=name
+						.header__rArrow
+							.fa.fa-angle-right
+				
+

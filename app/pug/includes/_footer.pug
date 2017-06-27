@@ -1,0 +1,79 @@
+-
+	var socLinks=[['../img/facebook.png','facebook'],
+					['../img/vk.png','vk'],
+					['../img/insta.png','instagram']]
+footer.footer
+	.footer__wrap
+		.footer__top
+			.footer__left
+				.footer__logo
+					img(src="../img/logo2.png ", alt="Binzly")
+				p.footer__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tempora debitis, sed illo officiis sunt adipisci ullam tempore cumque voluptatem nobis natus impedit eaque fuga sit recusandae magnam. Ipsum obcaecati aspernatur nisi illum autem molestias quidem laudantium necessitatibus voluptate ullam, modi facere porro, ipsam nobis dolorum placeat pariatur fugit earum ex, esse mollitia maiores similique dicta quas. Doloribus, sint autem sequi eligendi tempora delectus temporibus ad blanditiis aperiam debitis. Officia!
+				.footer__pay
+					.footer__payWrap
+						img(src="../img/payment.png", alt="Payment").footer__payImg
+					a(href="").footer__morePay Все способы оплаты
+					.footer__rArrow
+							.fa.fa-angle-right
+			.footer__center
+				ul.footer__nav
+					li.footer__navItem
+						a(href="#").footer__navLink Услуги
+					li.footer__navItem
+						a(href="#").footer__navLink Отзывы
+					li.footer__navItem
+						a(href="#").footer__navLink Новости
+					li.footer__navItem
+						a(href="#").footer__navLink Еще
+						ul.footer__hideMenu
+							li.footer__hMenuItem
+								.footer__rArrow2
+									.fa.fa-angle-right
+								a(href="#").footer__hMenuLink О компании
+							li.footer__hMenuItem
+								.footer__rArrow2
+									.fa.fa-angle-right
+								a(href="#").footer__hMenuLink Документы
+							li.footer__hMenuItem
+								.footer__rArrow2
+									.fa.fa-angle-right
+								a(href="#").footer__hMenuLink Скидки и бонусы
+							li.footer__hMenuItem
+								.footer__rArrow2
+									.fa.fa-angle-right
+								a(href="#").footer__hMenuLink Акции
+							li.footer__hMenuItem
+								.footer__rArrow2
+									.fa.fa-angle-right
+								a(href="#").footer__hMenuLink Компании
+				ul.footer__socials
+					-for(i=0;i<socLinks.length;i++)
+						li.footer__socItems
+							a
+								img(src=socLinks[i][0] alt=socLinks[i][1])
+			.footer__right
+				h3.footer__contact Контакты
+				.footer__wrapCapt
+					.footer__wrapIcon
+						.fa.fa-home
+					h4.footer__allCapt Адрес 
+				p.footer__info Днепр, 59000
+				p.footer__info ул.Воскресенская,32
+				.footer__wrapCapt
+					.footer__wrapIcon
+						.fa.fa-phone
+					h4.footer__allCapt Телефон
+				p.footer__info +1 (234) 555-1234
+				p.footer__info +1 (234) 555-1234
+				.footer__wrapCapt
+					.footer__wrapIcon
+						.fa.fa-envelope-o
+					h4.footer__allCapt E-mail
+				p.footer__info igorrtkach@gmail.com
+				.footer__wrapCapt
+					.footer__wrapIcon
+						.fa.fa-television
+					h4.footer__allCapt Web
+				a(href="http://binzly.com").footer__info http://binzly.com
+		.footer__bottom
+			p.footer__author &copy Copyright 2017 Binzly
